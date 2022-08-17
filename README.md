@@ -17,6 +17,7 @@ Please make sure to update tests as appropriate.
 
 # Main Visionary Idea
 <img width="666" alt="Screenshot 2022-08-17 at 15 55 22" src="https://user-images.githubusercontent.com/78226001/185152379-86e6f886-a87d-4b38-a925-e4ff4aa359be.png">
+Fig 1. The concept of the smooth passing from the face mesh to the Pupil and/or Iris visualization. 
 
 # Visualizations 
 
