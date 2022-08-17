@@ -1,0 +1,5 @@
+#virtual environment folder used for internal testing
+qa-env/
+
+#ignore draft files
+**draft**
