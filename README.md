@@ -12,8 +12,8 @@ Please make sure to update tests as appropriate.
 
 
 # Objectives
-Finding the inspirations for Pupil & Iris visualizations
-Getting familiar with OpenCV functions
-Getting familiar with YOLO model
-Implementing the Pupil & Iris visualizations conducted using OpenCV on YOLO model dict output
-Implementing other variables on PLR videos
+- Finding the inspirations for Pupil & Iris visualizations
+- Getting familiar with OpenCV functions
+- Getting familiar with YOLO model
+- Implementing the Pupil & Iris visualizations conducted using OpenCV on YOLO model dict output
+- Implementing other variables on PLR videos
