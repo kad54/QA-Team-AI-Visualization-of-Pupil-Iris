@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import imageio
 import matplotlib.pyplot as plt
-from VISUALIZATION_4 import add_rectangles, add_circles, draw_ruler_horizontal, draw_ruler_vertical
+from visualization1 import add_rectangles, add_circles, draw_ruler_horizontal, draw_ruler_vertical
 from main import load_model, predict
 
 # bucket_name = "dataset-eyedata"
@@ -74,8 +74,8 @@ def annotate_video_yolo(video):
                 fontScale,
                 fontColor,
                 lineType)
-            
-
+            draw_ruler_horizontal(frame_resized, 150, 170, 411, 170, color=(210,210,210), thickness=1)
+            draw_ruler_vertical(frame_resized, 125, 210, 125, 426, color=(210,210,210), thickness=1)
 
         except:
             frame_circle = frame_resized
@@ -83,20 +83,15 @@ def annotate_video_yolo(video):
             frame_rectangle = frame_resized
             plot.append(0)
             print('Missing prediction')
-        
-        frame_original_size = cv2.resize(
-            frame_circle, (video.shape[2], video.shape[1])
-        )
-
         frame_original_size = cv2.resize(
             frame_rectangle, (video.shape[2], video.shape[1])
         )
-
+        frame_original_size = cv2.resize(
+            frame_circle, (video.shape[2], video.shape[1])
+        )
         # this resize currently results in a warning from imageio.mimwrite since input shape is not 512x512 but 510x512,
         # but maintaining input shape seems to be a correct approach
-        draw_ruler_horizontal(frame_resized, 150, 170, 411, 170, color=(210,210,210), thickness=1)
-        draw_ruler_vertical(frame_resized, 125, 210, 125, 426, color=(210,210,210), thickness=1)
-        annotated_recording.append(cv2.cvtColor(frame_original_size, cv2.COLOR_BGR2BGRA))
+        annotated_recording.append(cv2.cvtColor(frame_original_size, cv2.COLOR_BGR2RGB))
         if i % 20 == 0 and i != 0:
             print("Finished processing {} frame".format(i))
     print("Annotation finished")
