@@ -8,12 +8,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-# Visualizations
-
-
 # Objectives
 - Finding the inspirations for Pupil & Iris visualizations
 - Getting familiar with OpenCV functions
 - Getting familiar with YOLO model
 - Implementing the Pupil & Iris visualizations conducted using OpenCV on YOLO model dict output
 - Implementing other variables on PLR videos
+
+# Main Visionary Idea
+<img width="666" alt="Screenshot 2022-08-17 at 15 55 22" src="https://user-images.githubusercontent.com/78226001/185152379-86e6f886-a87d-4b38-a925-e4ff4aa359be.png">
+
+# Visualizations 
+
